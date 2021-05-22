@@ -9,26 +9,26 @@
       <header>
         <nav>
           <ul>
-            <li><a href="#">ИНФОРМАЦИЯ</a></li>
-            <li><a href="#">ФОТО И ВИДЕО</a></li>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="#">Карта штата</a></li>
+            <li><a href="#">Гостиницы</a></li>
           </ul>
           <img src="https://via.placeholder.com/150x100" alt="">
-          <ul>
-            <li><a href="#">КАРТА ШТАТА</a></li>
-            <li><a href="#">ГОСТИНИЦЫ</a></li>
-          </ul>
         </nav>
       </header>
 
       <main>
-        <h1>SEDONA</h1>
+        <section>
+          <h2>Sedona</h2>
+          <img src="https://via.placeholder.com/150x100" alt="">
+        </section>
         
         <section>
-          <h2>ОПИСАНИЕ</h2>
-          <h4>
-            СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!
-          </h4>
           <p>
+            Седона - небольшой городк в аризоне, заслуживающий большего!
+          </p>
+          <p> 
             Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
           </p>
         </section>
@@ -36,29 +36,26 @@
         <section>
           <ul>
             <li>
-              <h3>НАСТОЯЩИЙ ГОРОДОК</h3>
-              <h4>№1</h4>
+              <h3>Настоящий городок</h3>
+              <p>№1</p>
               <p>  
                 Седона — не аттракцион для туристов, там течёт своя жизнь
               </p>
               <img src="https://via.placeholder.com/150x100" alt="">
-            </li>
-            <li>
-              <!-- ИНТЕРЕСНО -->
               <ul>
                 <li>
                   <img src="https://via.placeholder.com/150x100" alt="">
-                  <h3>ЖИЛЬЁ</h3>
+                  <h4>Жильё</h4>
                   <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 </li>
                 <li>
                   <img src="https://via.placeholder.com/150x100" alt="">
-                  <h3>ЕДА</h3>
+                  <h4>Еда</h4>
                   <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
                 <li>
                   <img src="https://via.placeholder.com/150x100" alt="">
-                  <h3>Сувениры</h3>
+                  <h4>Сувениры</h4>
                   <p>Не только китайского, но и местного производства!</p>
                 </li>
               </ul>
@@ -66,28 +63,28 @@
             <li>
               <img src="https://via.placeholder.com/150x100" alt="">
               <h2>Там есть Мост дьявола</h2>
-              <h4>№2</h4>
+              <p>№2</p>
               <p>  
                 Да, по нему можно пройти! Если конечно вы осмелитесь
               </p>
             </li>
             <li>
               <h2>Небольшая площадь</h2>
-              <h4>№3</h4>
+              <p>№3</p>
               <p>  
                 Все достопримечательности находятся очень близко
               </p>
             </li>
             <li>
               <h2>Красивая дорога</h2>
-              <h4>№4</h4>
+              <p>№4</p>
               <p>  
                 Ехать в Седону из Лас-Вегаса совсем не скучно!
               </p>
             </li>
             <li>
               <h2>Мало туристов</h2>
-              <h4>№5</h4>
+              <p>№5</p>
               <p>  
                 Большинство едет в Гранд каньон и толпится там
               </p>
@@ -96,20 +93,20 @@
         </section>
           
         <section>
-          <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+          <h2>Заинтересовались?</h2>
           <p>
-            УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ
+            укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <a href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+          <a href="#">Поиск гостини в Седоне</a>
         </section>
       </main>
       
       <footer>
         <section>
           <p>
-            #VISITSEDONA
-            <a href="tel:+78005558628">+7 800 555-86-28</a>
+            #visitsedona
           </p>
+          <a href="tel:+78005558628">+7 800 555-86-28</a>
         </section>
 
         <section>
@@ -128,24 +125,24 @@
 
         <section>
           <p>
-            website by <a href="https://htmlacademy.ru">HTML Academy</a>
+            website by <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
           </p>
         </section>
       </footer>
 
       <!-- POP-UP WINDOW -->
       <section>
-        <h2>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
-        <form>
-          <label>ДАТА ЗАЕЗДА:</label>
-          <input name="entry" type="date">
-          <label>ДАТА ВЫЕЗДА:</label>
-          <input name="exit" type="date">
-          <label>ВЗРОСЛЫЕ</label>
-          <input type="number">
-          <label>ДЕТИ</label>
-          <input type="number">
-          <button>НАЙТИ</button>
+        <h2>Поиск гостиницы в Седоне</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <label>Дата заезда:</label>
+          <input name="entryDate" type="text" placeholder="01.01.2021">
+          <label>Дата выезда:</label>
+          <input name="exitDate" type="text" placeholder="01.01.2021">
+          <label>Взрослые</label>
+          <input name ="adults" type="number">
+          <label>Дети</label>
+          <input name="childrens" type="number">
+          <button type="submit">Найти</button>
         </form>
       </section>
       
