@@ -13,7 +13,7 @@
             <li><a href="#">Карта штата</a></li>
             <li><a href="/catalog.html">Гостиницы</a></li>
           </ul>
-          <img src="https://via.placeholder.com/150x100" alt="">
+          <a href="index.html"><img src="https://via.placeholder.com/150x100" alt=""></a>
         </nav>
       </header>
 
@@ -37,7 +37,7 @@
                   <input type="checkbox" name="wifi" id="filter-wifi">
                   <label for="filter-wifi">Wi-Fi</label>
                 </li>
-              <ul>
+              </ul>
             </fieldset>
             
             <fieldset>
@@ -55,13 +55,13 @@
                   <input type="checkbox" name="appartments" id="filter-appartments" checked>
                   <label for="filter-appartments">Апартаменты</label>
                 </li>
-              <ul>
+              </ul>
             </fieldset>
 
             <fieldset>
               <legend>Стоимость в сутки, &#8381;</legend>
-              <input placeholder="От 0">
-              <input placeholder="От 3000">
+              <input name="minPrice" placeholder="От 0">
+              <input name="maxPrice" placeholder="От 3000">
               <input type="range">
             </fieldset>
             <button type="submit">Показать</button>
@@ -71,15 +71,14 @@
 
         <!-- Count and sort -->
         <section>
-          <h2>Найдено:</h2>
-          <input name="countPlaces" placeholder="3"> <!--на сколько уместен здесь input? -->
+          <h2>Найдено: 3</h2>
           <form method="get" action="https://echo.htmlacademy.ru">
             <h2>Сортировка</h2>
-            <input type="radio" name="sortButton" value="price">По цене
-            <input type="radio" name="sortButton" value="type">По типу
-            <input type="radio" name="sortButton" value="price">По рейтингу
-            <input type="radio" name="fromTo" value="fromLowToHigh">fromLowToHigh
-            <input type="radio" name="fromTo" value="fromHighToLow">fromHighToLow
+            <a href="#">По цене</a>
+            <a href="#">По типу</a>
+            <a href="#">По рейтингу</a>
+            <a href="#">fromLowToHigh</a>
+            <a href="#">fromHighToLow</a>
           </form>
         </section>
 
@@ -88,10 +87,8 @@
           <h2>Список вариантов жилья</h2>
           <ul>
             <li>
-              <a href="#">
-                <h3>Amara resort &amp; spa</h3>
-                <img src="https://via.placeholder.com/150x100" alt="">
-              </a>
+              <h3>Amara resort &amp; spa</h3>
+              <img src="https://via.placeholder.com/150x100" alt="">
               <p>
                 Гостиница от 4000&#8381;
                 <button type="button">Подробнее</button>
@@ -109,10 +106,8 @@
               </p>
             </li>
             <li>
-              <a href="#">
-                <h3>Desert Quail Inn</h3>
-                <img src="https://via.placeholder.com/150x100" alt="">
-              </a>
+              <h3>Desert Quail Inn</h3>
+              <img src="https://via.placeholder.com/150x100" alt="">
               <p>
                 Мотель от 3000&#8381;
                 <button type="button">Подробнее</button>
@@ -129,10 +124,8 @@
               </p>
             </li>
             <li>
-              <a href="#">
-                <h3>Villas At Poco Diablo</h3>
-                <img src="https://via.placeholder.com/150x100" alt="">
-              </a>
+              <h3>Villas At Poco Diablo</h3>
+              <img src="https://via.placeholder.com/150x100" alt="">
               <p>
                 Аппартаменты от 2000&#8381;
                 <button type="button">Подробнее</button>
