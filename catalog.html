@@ -13,10 +13,10 @@
       <header class="main-header">
         <nav class="main-navigation">
           <ul class="site-navigation">
-            <li><a href="#">Информация</a></li>
+            <li><a href="index.html">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
             <li><a href="#">Карта штата</a></li>
-            <li><a href="/catalog.html">Гостиницы</a></li>
+            <li class="site-navigation-current"><a href="catalog.html">Гостиницы</a></li>
           </ul>
           <a href="index.html"><img src="img/logo/logo.svg" width="138" height="70" alt="Перейти на главую страницу сайта"></a>
         </nav>
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <input type="checkbox" name="hotel" id="filter-hotel" checked>
-                  <label for="filter-hotel">гостиница</label>
+                  <label for="filter-hotel">Гостиница</label>
                 </li>
                 <li>
                   <input type="checkbox" name="motel" id="filter-motel" checked>
@@ -78,11 +78,11 @@
           <h2>Найдено: 3</h2>
           <form class="form-for-sort" method="get" action="https://echo.htmlacademy.ru">
             <p>Сортировка: 
-              <a href="#">По цене</a>
-              <a href="#">По типу</a>
-              <a href="#">По рейтингу</a>
-              <a href="#">fromLowToHigh</a>
-              <a href="#">fromHighToLow</a>
+              <a class="sort-item" href="#">По цене</a>
+              <a class="sort-item" href="#">По типу</a>
+              <a class="sort-item" href="#">По рейтингу</a>
+              <a class="sort-item" href="#">fromLowToHigh</a>
+              <a class="sort-item" href="#">fromHighToLow</a>
             </p>
           </form>
         </section>
@@ -92,7 +92,7 @@
           <h2>Список вариантов жилья</h2>
           <ul class="housing-options-list">
             <li class="housing-options-item">
-              <h3>Amara resort &amp; spa</h3>
+              <a class="house-link" href="#"><h3>Amara resort &amp; spa</h3></a>
               <img src="img/amara-resort.jpg" width="135" height="90" alt="Фотография здания гостиницы Amara resrt &amp; spa">
               <p>
                 Гостиница от 4000&#8381;
@@ -111,7 +111,7 @@
               </p>
             </li>
             <li class="housing-options-item">
-              <h3>Desert Quail Inn</h3>
+              <a class="house-link" href="#"><h3>Desert Quail Inn</h3></a>
               <img src="img/desert quail.jpg" width="135" height="90" alt="Фотография здания мотеля Desert Quail Inn">
               <p>
                 Мотель от 3000&#8381;
@@ -129,7 +129,7 @@
               </p>
             </li>
             <li class="housing-options-item">
-              <h3>Villas At Poco Diablo</h3>
+              <a class="house-link" href="#"><h3>Villas At Poco Diablo</h3></a>
               <img src="img/villas.jpg" width="135" height="90" alt="Фотография аппартаментов Villias At Poco Diablo">
               <p>
                 Аппартаменты от 2000&#8381;

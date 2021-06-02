@@ -13,10 +13,10 @@
       <header class="main-header">
         <nav class="main-navigation">
           <ul class="site-navigation">
-            <li><a href="#">Информация</a></li>
+            <li class="site-navigation-current"><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
             <li><a href="#">Карта штата</a></li>
-            <li><a href="/catalog.html">Гостиницы</a></li>
+            <li><a href="catalog.html">Гостиницы</a></li>
           </ul>
           <a href="index.html"><img src="img/logo/logo.svg" width="138" height="70" alt="Перейти на главую страницу сайта"></a>
         </nav>
@@ -157,13 +157,13 @@
         <p>Поиск гостиницы в Седоне</p>
         <form action="https://echo.htmlacademy.ru" method="post">
           <label>Дата заезда:</label>
-          <input class="input-date" name="entryDate" type="text" placeholder="01.01.2021">
+          <input class="modal-input input-date" name="entryDate" type="date" value="2021-01-01">
           <label>Дата выезда:</label>
-          <input class="input-date" name="exitDate" type="text" placeholder="01.01.2021">
+          <input class="modal-input input-date" name="exitDate" type="date" value="2021-01-01">
           <label>Взрослые:</label>
-          <input class="input-count" name ="adults" type="number">
+          <input class="modal-input input-count" name ="adults" type="number" value="2">
           <label>Дети:</label>
-          <input class="input-count" name="childrens" type="number">
+          <input class="modal-input input-count" name="childrens" type="number" value="1">
           <button class="button modal-button blue-button" type="submit">Найти</button>
         </form>
       </section>

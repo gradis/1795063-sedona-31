@@ -65,12 +65,12 @@ img {
 }
 
 .site-navigation a:focus {
-  color: var(--basic-brown);
-}
-
-.site-navigation a:active {
   color: var(--basic-black);
   opacity: 0.3;
+}
+
+.site-navigation-current a {
+  color: var(--basic-brown);
 }
 
 /* Banner */
@@ -86,6 +86,7 @@ img {
 
 .town-description {
   font-size: 21px;
+  font-weight: 700;
 }
 
 /* Features */
@@ -129,6 +130,22 @@ img {
 
 .interesting-item h4 {
   font-size: 21px;
+}
+
+.house-link h3 {
+  color: var(--basic-black);
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.house-link h3:hover {
+  color: var(--basic-blue);
+}
+
+.house-link h3:active {
+  color: var(--basic-black);
+  opacity: 0.3;
 }
 
 .book {
@@ -182,6 +199,26 @@ img {
   font-weight: 700;
   color: var(--basic-black);
   text-align: center;
+  background-color: var(--basic-white);
+}
+
+.modal-input {
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  background-color: var(--basic-light-gray);
+
+}
+
+.modal-input:hover {
+  background-color: var(--hover-light-gray);
+}
+
+.modal-input:focus {
+  border: 2px solid var(--hover-light-gray);
+  background-color: var(--basic-white);
+  /* box-sizing: border-box; */
 }
 
 .modal-button {
@@ -244,6 +281,29 @@ img {
   font-weight: 400;
 }
 
+.sort-item {
+  color: var(--basic-black);
+  opacity: 0.3;
+  border-bottom: 1px dashed var(--basic-blue);
+}
+
+.sort-item:hover {
+  color: var(--basic-blue);
+  opacity: 1;
+}
+
+.sort-item:active {
+  color: var(--basic-black);
+  opacity: 1;
+  border-bottom: none;
+}
+
+.sort-item:focus {
+  border-bottom: none;
+  color: var(--basic-blue);
+  opacity: 1;
+}
+
 /* Results */
 
 .results {
@@ -278,6 +338,8 @@ img {
 /* Buttons */
 
 .brown-button {
+  font-size: 14px;
+  line-height: 21px;
   text-transform: uppercase;
   font-weight: 700;
   color:var(--basic-white);
@@ -294,6 +356,8 @@ img {
 }
 
 .blue-button {
+  font-size: 14px;
+  line-height: 21px;
   text-transform: uppercase;
   font-weight: 700;
   color: var(--basic-white);
