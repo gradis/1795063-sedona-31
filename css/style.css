@@ -1,0 +1,390 @@
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+  --basic-gray: #888888;
+  --basic-light-gray: #f2f2f2;
+  --basic-blue: #81B3D2;
+  --basic-dark-blue: #669EC0;
+  --basic-neutral: #e5e5e5;
+  --basic-extra-light: #f8f5f2;
+  --basic-brown: #766357;
+  --basic-dark-brown: #604E43;
+  --hover-light-gray: #EBEBEB;
+
+  --special-gray: #eeeeee;
+  --special-brown: #503E33;
+  --special-blue: #5496BD;
+
+}
+
+/* Global */
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-light-gray);
+
+}
+
+a {
+  text-decoration: none;
+  color: var(--basic-black)
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* User navigation */
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  background-color: var(--basic-white);
+}
+
+.site-navigation {
+  list-style-type: none;
+}
+
+.site-navigation a{
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover {
+  color: var(--basic-blue);
+}
+
+.site-navigation a:focus {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.site-navigation-current a {
+  color: var(--basic-brown);
+}
+
+/* Banner */
+
+.main-banner {
+  text-align: center;
+  background-color: var(--basic-white);
+}
+
+.main-banner p {
+  line-height: 26px;
+}
+
+.town-description {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+/* Features */
+
+.features {
+  background-color: var(--special-gray);
+}
+
+.features-list {
+  list-style-type: none;
+}
+
+.features-item {
+  text-align: center;
+  line-height:  21px;
+}
+
+.blue-item {
+  color:var(--basic-white);
+  background-color: var(--basic-blue);
+}
+
+.features-item h3 {
+  background-color: --bas;
+  font-size: 21px;
+}
+
+.features-item p {
+  font-size: 14px;
+}
+
+.interesting-features {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  list-style-type: none;
+}
+
+.interesting-item {
+  line-height: 21px;
+}
+
+.interesting-item h4 {
+  font-size: 21px;
+}
+
+.house-link h3 {
+  color: var(--basic-black);
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.house-link h3:hover {
+  color: var(--basic-blue);
+}
+
+.house-link h3:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.book {
+  background-color: var(--basic-white);
+  text-align: center;
+  line-height: 24px;
+}
+
+.book h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.book a {
+  font-size: 21px;
+  font-weight: 700;
+  color:var(--basic-white);
+  background-color: var(--basic-brown);
+}
+
+.main-footer {
+  line-height: 26px;
+  background-color: rgba(255, 255, 255, 0.3)
+}
+
+.inner-footer {
+  line-height: 26px;
+  background-color: var(--basic-white);
+}
+
+.footer-contacts {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.social-list {
+  list-style-type: none;
+}
+
+.social-button {
+  background-color: var(--basic-blue);
+}
+
+.modal {
+  line-height: 26px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-align: center;
+  background-color: var(--basic-white);
+}
+
+.modal-input {
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  background-color: var(--basic-light-gray);
+
+}
+
+.modal-input:hover {
+  background-color: var(--hover-light-gray);
+}
+
+.modal-input:focus {
+  border: 2px solid var(--hover-light-gray);
+  background-color: var(--basic-white);
+  /* box-sizing: border-box; */
+}
+
+.modal-button {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.button {
+  text-transform: uppercase;
+  border: none;
+}
+
+/*Inner page*/
+
+.filters {
+  background-color: var(--basic-white);
+  line-height: 21px;
+}
+
+.filters-form fieldset {
+  border: none;
+}
+
+.infrastructure-filter ul{
+  list-style-type: none;
+}
+
+.infrastructure-filter legend{
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.type-of-place-filter ul {
+  list-style-type: none;
+}
+
+.type-of-place-filter legend {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.price-filter {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.count-and-sort {
+  background-color: var(--basic-white);
+}
+
+.count-and-sort h2 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.form-for-sort {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.sort-item {
+  color: var(--basic-black);
+  opacity: 0.3;
+  border-bottom: 1px dashed var(--basic-blue);
+}
+
+.sort-item:hover {
+  color: var(--basic-blue);
+  opacity: 1;
+}
+
+.sort-item:active {
+  color: var(--basic-black);
+  opacity: 1;
+  border-bottom: none;
+}
+
+.sort-item:focus {
+  border-bottom: none;
+  color: var(--basic-blue);
+  opacity: 1;
+}
+
+/* Results */
+
+.results {
+  background-color: var(--basic-white);
+}
+
+.housing-options-list {
+  list-style-type: none;
+}
+
+.housing-options-item h3 {
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.housing-options-item p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.rate-list {
+  list-style-image: url('../img/icons/star.svg');
+}
+
+.rate-text {
+  background-color: var(--basic-light-gray);
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/* Buttons */
+
+.brown-button {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color:var(--basic-white);
+  background-color: var(--basic-brown);
+}
+
+.brown-button:hover {
+  background-color: var(--basic-dark-brown);
+}
+
+.brown-button:active {
+  background-color: var(--special-brown);
+  color: rgba(255, 255, 255, 0.3)
+}
+
+.blue-button {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+
+.blue-button:hover {
+  background-color: var(--basic-dark-blue);
+}
+
+.blue-button:active {
+  background-color: var(--special-blue);
+  color: rgba(255, 255, 255, 0.3)
+}
+
+.transparent-button {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: transparent;
+  border-color: var(--basic-white);
+  border-radius: 2px;
+  border-width: 2px;
+}
+
+.transparent-button:hover {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+
+}
