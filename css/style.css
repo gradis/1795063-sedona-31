@@ -21,9 +21,15 @@
 
 /* Global */
 
+.page {
+  height: 100%;
+}
+
 body {
+  width: 1200px;
+  max-width: 1200px;
   min-width: 960px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-family: "PT Sans Narrow", Arial, sans-serif;
   font-size: 14px;
@@ -31,6 +37,9 @@ body {
   text-transform: uppercase;
   background-color: var(--basic-light-gray);
 
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
 }
 
 a {
@@ -45,13 +54,29 @@ img {
 
 /* User navigation */
 
+.main-header {
+  width: 1200px;
+  display: grid;
+  margin: 0 auto;
+}
+
 .main-navigation {
+  display: grid;
   font-size: 14px;
   line-height: 26px;
   background-color: var(--basic-white);
+  height: 0 auto;
+}
+
+.main-header-logo {
+  justify-self: center;
+
 }
 
 .site-navigation {
+  margin: 0;
+  padding: 0;
+  order: 1;
   list-style-type: none;
 }
 
@@ -93,20 +118,44 @@ img {
 
 .features {
   background-color: var(--special-gray);
+  display: grid;
+  
 }
 
 .features-list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .features-item {
+  min-height: 256px;
   text-align: center;
   line-height:  21px;
+  display: grid;
+}
+
+.wide-item {
+  grid-column: 1 / -1;
 }
 
 .blue-item {
   color:var(--basic-white);
   background-color: var(--basic-blue);
+
+  display: grid;
+  grid-template-columns: min-content 1fr;
+}
+
+.blue-item-image {
+  min-width: 800px;
+  height: auto;
+}
+
+.blue-text {
+  min-width: 400px;
 }
 
 .features-item h3 {
@@ -122,6 +171,12 @@ img {
   color: var(--basic-black);
   background-color: var(--basic-white);
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 330px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .interesting-item {
@@ -149,6 +204,7 @@ img {
 }
 
 .book {
+  padding-top: 58px;
   background-color: var(--basic-white);
   text-align: center;
   line-height: 24px;
@@ -166,32 +222,7 @@ img {
   background-color: var(--basic-brown);
 }
 
-.main-footer {
-  line-height: 26px;
-  background-color: rgba(255, 255, 255, 0.3)
-}
 
-.inner-footer {
-  line-height: 26px;
-  background-color: var(--basic-white);
-}
-
-.footer-contacts {
-  font-size: 21px;
-  font-weight: 700;
-}
-
-.footer-social {
-  text-align: center;
-}
-
-.social-list {
-  list-style-type: none;
-}
-
-.social-button {
-  background-color: var(--basic-blue);
-}
 
 .modal {
   line-height: 26px;
@@ -236,14 +267,30 @@ img {
 .filters {
   background-color: var(--basic-white);
   line-height: 21px;
+  display: grid;
+}
+
+.filters-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.filters-form button {
+  grid-column: 3/3;
 }
 
 .filters-form fieldset {
   border: none;
 }
 
+.infrastructure-filter {
+  width: 326px;
+}
+
 .infrastructure-filter ul{
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .infrastructure-filter legend{
@@ -253,6 +300,8 @@ img {
 
 .type-of-place-filter ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .type-of-place-filter legend {
@@ -266,6 +315,8 @@ img {
 }
 
 .count-and-sort {
+  padding-left: 73px;
+  padding-right: 73px;
   background-color: var(--basic-white);
 }
 
@@ -312,6 +363,15 @@ img {
 
 .housing-options-list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.housing-options-item {
+  padding: 29px 73px;
+  height: 152px;
+  display: grid;
+  grid-template-columns: 135px 1fr 127px;
 }
 
 .housing-options-item h3 {
@@ -327,12 +387,63 @@ img {
 
 .rate-list {
   list-style-image: url('../img/icons/star.svg');
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .rate-text {
   background-color: var(--basic-light-gray);
   font-size: 14px;
   line-height: 21px;
+  text-align: center;
+}
+
+/* Footer */
+
+.main-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+
+  line-height: 26px;
+  background-color: rgba(255, 255, 255, 0.3)
+}
+
+.inner-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+
+  line-height: 26px;
+  background-color: var(--basic-white);
+}
+
+.footer-contacts {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.footer-social {
+  justify-self: center;
+  text-align: center;
+}
+
+.social-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.social-button {
+  background-color: var(--basic-blue);
+}
+
+.footer-copyright {
+  justify-self: center;
 }
 
 /* Buttons */

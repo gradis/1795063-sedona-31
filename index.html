@@ -1,5 +1,5 @@
   <!DOCTYPE html>
-  <html lang="ru">
+  <html class="page" lang="ru">
     <head>
       <meta charset="utf-8">
       <title>HTML Academy: Седона</title>
@@ -18,7 +18,7 @@
             <li><a href="#">Карта штата</a></li>
             <li><a href="catalog.html">Гостиницы</a></li>
           </ul>
-          <a href="index.html"><img src="img/logo/logo.svg" width="138" height="70" alt="Перейти на главую страницу сайта"></a>
+          <a class="main-header-logo" href="index.html"><img src="img/logo/logo.svg" width="138" height="70" alt="Перейти на главую страницу сайта"></a>
         </nav>
       </header>
 
@@ -43,13 +43,17 @@
         <section class="features">
           <h2>Преимущества</h2>
           <ul class="features-list">
-            <li class="features-item blue-item">
-              <h3>Настоящий городок</h3>
-              <p>-№1-</p>
-              <p>  
-                Седона — не аттракцион для туристов, там течёт своя жизнь
-              </p>
-              <img src="img/town.jpg" width="800" height="256" alt="Фотография дома, который находится в Седоне">
+            <li class="features-item wide-item">
+              <div class="blue-item">
+                <div class="blue-text">
+                  <h3>Настоящий городок</h3>
+                  <p>-№1-</p>
+                  <p>  
+                    Седона — не аттракцион для туристов, там течёт своя жизнь
+                  </p>
+                </div>
+                <img src="img/town.jpg" width="800" height="256" alt="Фотография дома, который находится в Седоне">
+              </div>
               <ul class="interesting-features">
                 <li class="interesting-item">
                   <!-- img home-ico -->
@@ -68,13 +72,17 @@
                 </li>
               </ul>
             </li>
-            <li class="features-item blue-item">
-              <img src="img/landscape.jpg" width="800" height="256" alt="Фотография Моста дьявола">
-              <h3>Там есть Мост дьявола</h3>
-              <p>-№2-</p>
-              <p>  
-                Да, по нему можно пройти! Если конечно вы осмелитесь
-              </p>
+            <li class="features-item wide-item">
+              <div class="blue-item">
+                <img class="blue-item-image" src="img/landscape.jpg" width="800" height="256" alt="Фотография Моста дьявола">
+                <div class="blue-text">
+                  <h3>Там есть Мост дьявола</h3>
+                  <p>-№2-</p>
+                  <p>  
+                    Да, по нему можно пройти! Если конечно вы осмелитесь
+                  </p>
+                </div>
+              </div>
             </li>
             <li class="features-item">
               <h3>Небольшая площадь</h3>
@@ -106,7 +114,7 @@
             укажите предполагаемые даты поездки, <br>
             и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <a class="book-link brown-button" href="#">Поиск гостиницы в Седоне</a><br>
+          <a class="book-link brown-button" href="#">Поиск гостиницы в Седоне</a>
           <img src="img/map.jpg" width="1199" height="594" alt="Местоположение города на карте. Он находится севернее Фластаффа, штат Аризона">
         </section>
       </main>
@@ -153,7 +161,7 @@
       </footer>
 
       <!-- POP-UP WINDOW -->
-      <section class="modal">
+      <!--<section class="modal">
         <p>Поиск гостиницы в Седоне</p>
         <form action="https://echo.htmlacademy.ru" method="post">
           <label>Дата заезда:</label>
@@ -166,7 +174,7 @@
           <input class="modal-input input-count" name="childrens" type="number" value="1">
           <button class="button modal-button blue-button" type="submit">Найти</button>
         </form>
-      </section>
+      </section>-->
       
     </body>
   </html>
