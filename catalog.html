@@ -13,10 +13,10 @@
       <header class="main-header">
         <nav class="main-navigation">
           <ul class="site-navigation">
-            <li><a href="index.html">Информация</a></li>
+            <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
-            <li><a href="#">Карта штата</a></li>
-            <li class="site-navigation-current"><a href="catalog.html">Гостиницы</a></li>
+            <li class="align-right"><a href="#">Карта штата</a></li>
+            <li class="align-right site-navigation-current"><a href="catalog.html">Гостиницы</a></li>
           </ul>
           <a class="main-header-logo" href="index.html"><img src="img/logo/logo.svg" width="138" height="70" alt="Перейти на главую страницу сайта"></a>
         </nav>
@@ -27,36 +27,36 @@
         <section class="filters">
           <!-- <h2>Фильтр гостиниц</h2> -->
           <form class="filters-form" method="get" action="https://echo.htmlacademy.ru">
-            <fieldset class="infrastructure-filter">
-              <legend>Инфраструктура:</legend>
-              <ul>
-                <li>
+            <fieldset class="infrastructure-filter filter">
+              <legend class="filter-formta-legend">Инфраструктура:</legend>
+              <ul class="filter-format-list">
+                <li class="filter-format-item">
                   <input type="checkbox" name="swimingPool" id="filter-swiming-pool" checked>
                   <label for="filter-swiming-pool">Бассейн</label>
                 </li>
-                <li>
+                <li class="filter-format-item">
                   <input type="checkbox" name="parking" id="filter-parking">
                   <label for="filter-parking">Парковка</label>
                 </li>
-                <li>
+                <li class="filter-format-item">
                   <input type="checkbox" name="wifi" id="filter-wifi">
                   <label for="filter-wifi">Wi-Fi</label>
                 </li>
               </ul>
             </fieldset>
             
-            <fieldset class="type-of-place-filter">
-              <legend>Тип жилья:</legend>
-              <ul>
-                <li>
+            <fieldset class="type-of-place-filter filter">
+              <legend class="filter-formta-legend">Тип жилья:</legend>
+              <ul class="filter-format-list">
+                <li class="filter-format-item">
                   <input type="checkbox" name="hotel" id="filter-hotel" checked>
                   <label for="filter-hotel">Гостиница</label>
                 </li>
-                <li>
+                <li class="filter-format-item">
                   <input type="checkbox" name="motel" id="filter-motel" checked>
                   <label for="filter-motel">Мотель</label>
                 </li>
-                <li>
+                <li class="filter-format-item">
                   <input type="checkbox" name="appartments" id="filter-appartments" checked>
                   <label for="filter-appartments">Апартаменты</label>
                 </li>
@@ -67,7 +67,7 @@
               <div class="price-filter-container">
               <fieldset class="price-filter">
                 <legend>Стоимость в сутки, &#8381;:</legend>
-                <div>
+                <div class="price-inputs">
                   <input name="minPrice" placeholder="От 0">
                   <input name="maxPrice" placeholder="От 3000">
                 </div>
@@ -86,13 +86,18 @@
           <div class="count-and-sort">
             <h3>Найдено: 3</h3>
             <form class="form-for-sort" method="get" action="https://echo.htmlacademy.ru">
-                <p>Сортировка:
-                  <a class="sort-item" href="#">По цене</a>
-                  <a class="sort-item" href="#">По типу</a>
-                  <a class="sort-item" href="#">По рейтингу</a>
-                  <a class="sort-item" href="#">fromLowToHigh</a>
-                  <a class="sort-item" href="#">fromHighToLow</a>
-                </p>
+                <div>
+                  <p>Сортировка:</p>
+                  <ul class="form-filter left-filter">  
+                    <li><a class="sort-item" href="#">По цене</a></li>
+                    <li><a class="sort-item" href="#">По типу</a></li>
+                    <li><a class="sort-item" href="#">По рейтингу</a></li>
+                  </ul>
+                  <ul class="form-filter right-filter">
+                    <li><a class="sort-item left-arrow" href="#">fromLowToHigh</a></li>
+                    <li><a class="sort-item" href="#">fromHighToLow</a></li>
+                  </ul>
+                </div>
             </form>
           </div>
 
@@ -171,7 +176,7 @@
         </section>
       </main>
 
-      <footer class="inner-footer">
+      <footer class="main-footer">
         <section class="footer-contacts">
           <p>
             #visitsedona

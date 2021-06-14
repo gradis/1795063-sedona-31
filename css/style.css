@@ -21,6 +21,7 @@
 
 /* Global */
 
+
 .page {
   height: 100%;
 }
@@ -90,10 +91,10 @@ section {
   order: 1;
   list-style-type: none;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
 }
+
 
 .site-navigation a{
   font-weight: 700;
@@ -111,6 +112,10 @@ section {
 
 .site-navigation-current a {
   color: var(--basic-brown);
+}
+
+.align-right {
+  text-align: right;
 }
 
 /* Banner */
@@ -334,55 +339,28 @@ section {
   border: none;
 }
 
-.infrastructure-filter {
-  justify-self: flex-start;
+.filter {
   margin: 30px 0px;
   padding: 0;
-  display: flex;
 }
 
-.infrastructure-filter ul{
+.filter-format-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
-.infrastructure-filter > ul > li{
+.filter-format-item {
   font-size: 14px;
   font-weight: normal;
+  margin-bottom: 23px;
 }
 
-.infrastructure-filter legend{
+.filter-formta-legend {
   font-size: 16px;
   font-weight: 700;
-}
-
-.type-of-place-filter {
-  margin: 30px 0px;
-  display: flex;
-}
-
-.type-of-place-filter ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.type-of-place-filter > ul > li{
-  font-size: 14px;
-  font-weight: normal;
-}
-
-.type-of-place-filter legend {
-  font-size: 16px;
-  font-weight: 700;
-  margin: 0;
+  margin-right: 119px ;
+  margin-bottom: 25px;
   padding: 0;
 }
 
@@ -394,7 +372,7 @@ section {
   flex-grow: 1;
   flex-direction: column;
 
-  margin: 30px 0px;
+  margin-bottom: 11px;
   padding: 0;
 }
 
@@ -408,8 +386,8 @@ section {
 .price-filter {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  /* justify-content: space-between;
+  align-items: center; */
 
   margin: 0;
   padding: 0;
@@ -418,6 +396,22 @@ section {
 .price-filter legend {
   font-size: 16px;
   font-weight: 700;
+  margin-bottom: 11px;
+}
+
+.price-inputs {
+  height: 36px;
+  margin-bottom: 11px;
+}
+
+.price-inputs input {
+  height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.price-filter input {
+  margin-bottom: 23px;
 }
 
 /* Results */
@@ -452,10 +446,27 @@ section {
   /* padding-left: 47px; */
 }
 
-.form-for-sort p {
+.form-for-sort div {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
+}
+
+.form-filter {
+  list-style: none;
+  display: flex;
+}
+
+.left-filter li{
+  margin-right: 32px;
+}
+
+.right-filter {
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.left-arrow {
+  margin-right: auto;
 }
 
 .sort-item {
@@ -505,12 +516,6 @@ section {
   justify-content: space-between;
 }
 
-/* .short-info div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-} */
-
 .housing-options-item h3 {
   margin: 0;
   font-size: 21px;
@@ -538,7 +543,7 @@ section {
   line-height: 26px;
   list-style: none;
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: flex-end;
 }
 
 .rate-list li {
@@ -567,20 +572,7 @@ section {
   padding-left: 73px;
   padding-right: 73px;
   line-height: 26px;
-  background-color: rgba(255, 255, 255, 0.3);
-
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.inner-footer {
-  height: 120px;
-  margin: 0;
-  padding-left: 73px;
-  padding-right: 73px;
-  line-height: 26px;
-  background-color: var(--basic-white);
+  background-color: rgba(255, 255, 255, 0.9);
 
   display: flex;
   justify-content: space-around;
@@ -590,6 +582,7 @@ section {
 .footer-contacts {
   font-size: 21px;
   font-weight: 700;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
