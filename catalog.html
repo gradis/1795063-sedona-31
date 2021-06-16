@@ -25,39 +25,39 @@
       <main class="inner-container">
         <!-- Filter -->
         <section class="filters">
-          <!-- <h2>Фильтр гостиниц</h2> -->
+          <h2 class="visually-hidden">Фильтр гостиниц</h2>
           <form class="filters-form" method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="infrastructure-filter filter">
-              <legend class="filter-formta-legend">Инфраструктура:</legend>
+              <legend class="filter-format-legend">Инфраструктура:</legend>
               <ul class="filter-format-list">
                 <li class="filter-format-item">
-                  <input type="checkbox" name="swimingPool" id="filter-swiming-pool" checked>
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="swimingPool" id="filter-swiming-pool" checked>
                   <label for="filter-swiming-pool">Бассейн</label>
                 </li>
                 <li class="filter-format-item">
-                  <input type="checkbox" name="parking" id="filter-parking">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="parking" id="filter-parking">
                   <label for="filter-parking">Парковка</label>
                 </li>
                 <li class="filter-format-item">
-                  <input type="checkbox" name="wifi" id="filter-wifi">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="wifi" id="filter-wifi" disabled>
                   <label for="filter-wifi">Wi-Fi</label>
                 </li>
               </ul>
             </fieldset>
             
             <fieldset class="type-of-place-filter filter">
-              <legend class="filter-formta-legend">Тип жилья:</legend>
+              <legend class="filter-format-legend">Тип жилья:</legend>
               <ul class="filter-format-list">
                 <li class="filter-format-item">
-                  <input type="checkbox" name="hotel" id="filter-hotel" checked>
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="hotel" id="filter-hotel" checked>
                   <label for="filter-hotel">Гостиница</label>
                 </li>
                 <li class="filter-format-item">
-                  <input type="checkbox" name="motel" id="filter-motel" checked>
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="motel" id="filter-motel" checked>
                   <label for="filter-motel">Мотель</label>
                 </li>
                 <li class="filter-format-item">
-                  <input type="checkbox" name="appartments" id="filter-appartments" checked>
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="appartments" id="filter-appartments" checked>
                   <label for="filter-appartments">Апартаменты</label>
                 </li>
               </ul>
@@ -65,14 +65,23 @@
 
             <div>
               <div class="price-filter-container">
-              <fieldset class="price-filter">
-                <legend>Стоимость в сутки, &#8381;:</legend>
-                <div class="price-inputs">
-                  <input name="minPrice" placeholder="От 0">
-                  <input name="maxPrice" placeholder="От 3000">
-                </div>
-                <input type="range">
-              </fieldset>
+                <fieldset class="price-filter">
+                  <legend>Стоимость в сутки, &#8381;:</legend>
+                  <div class="range-filter">
+                    <div class="price-controls">
+                        <input name="minPrice" placeholder="От 0">
+                        <input name="maxPrice" placeholder="ДО 3000">
+                        <div class="short-border"></div>
+                    </div>
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="toggle toggle-min"></div>
+                      <div class="toggle toggle-max"></div>
+                    </div>
+                  </div>
+                </fieldset>
               <button class="transparent-button" type="submit">Показать</button>
               </div>
             </div>
@@ -81,7 +90,7 @@
 
 
         <section class="results">
-          <!-- <h2>Список вариантов жилья</h2> -->
+          <h2 class="visually-hidden">Список вариантов жилья</h2>
           <!-- Count and sort -->
           <div class="count-and-sort">
             <h3>Найдено: 3</h3>
@@ -94,8 +103,20 @@
                     <li><a class="sort-item" href="#">По рейтингу</a></li>
                   </ul>
                   <ul class="form-filter right-filter">
-                    <li><a class="sort-item left-arrow" href="#">fromLowToHigh</a></li>
-                    <li><a class="sort-item" href="#">fromHighToLow</a></li>
+                    <li>
+                      <a class="filter-arrow flip-horizontal" href="#">
+                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.5 10L0 0H11" fill="black"/>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="filter-arrow selected-filter-arrow" href="#">
+                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.5 10L0 0H11" fill="black"/>
+                        </svg>
+                      </a>
+                    </li>
                   </ul>
                 </div>
             </form>
@@ -177,14 +198,14 @@
       </main>
 
       <footer class="main-footer">
-        <section class="footer-contacts">
+        <section class="footer-contacts align-center">
           <p>
             #visitsedona
           </p>
           <a class="footer-phone" href="tel:+78005558628">+7 800 555-86-28</a>
         </section>
 
-        <section class="footer-social">
+        <section class="footer-social align-center">
           <ul class="social-list">
             <li class="social-button">
               <a href="#">
@@ -213,7 +234,7 @@
           </ul>
         </section>
 
-        <section class="footer-copyright">
+        <section class="footer-copyright align-center">
           <p>
             website by 
             <a class="html-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
