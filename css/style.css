@@ -29,8 +29,7 @@
 }
 
 body {
-  width: 1200px;
-  /* min-width: 960px; */
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0;
   font-family: "PT Sans Narrow", Arial, sans-serif;
@@ -38,7 +37,7 @@ body {
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-light-gray);
-  /* min-height: 100%; */
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 
   position: relative;
 
@@ -91,14 +90,12 @@ section {
 /* User navigation */
 
 .main-header {
-  width: 1200px;
-  /* display: grid; */
+  width: 100%;
   margin: 0 auto;
   position: relative;
 }
 
 .main-navigation {
-  height: 56px;
   font-size: 14px;
   line-height: 26px;
   background-color: var(--basic-white);
@@ -110,6 +107,9 @@ section {
 }
 
 .main-header-logo {
+  width: 138px;
+  height: 70px;
+
   position: absolute;
   left: 531px;
 }
@@ -117,16 +117,23 @@ section {
 .site-navigation {
   margin: 0;
   padding: 0;
-  order: 1;
+  /* order: 1; */
   list-style-type: none;
 
   display: grid;
   grid-template-columns: repeat(4, 25%);
+
+
+  /* display: flex;
+  justify-content: space-between; */
 }
 
-.site-navigation {
-  align-content: center;
+.site-navigation li {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
+
+
 
 
 .site-navigation a{
@@ -294,6 +301,10 @@ section {
   align-items: center;
 }
 
+.interesting-item svg {
+  height: 77px;
+}
+
 .interesting-item h4 {
   font-size: 21px;
 }
@@ -346,16 +357,89 @@ section {
 
 .book-link {
   display: block;
-  padding:  30px 125px 30px 124px;
+  width: 568px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /* padding:  30px 125px 30px 124px; */
 }
+
+/* Modal */
 
 .modal {
   line-height: 26px;
   font-size: 14px;
   font-weight: 700;
   color: var(--basic-black);
-  text-align: center;
   background-color: var(--basic-white);
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+
+  width: 568px;
+
+  position: absolute;
+  left: 316px;
+  top: 2209px;
+}
+
+.modal-form {
+  padding: 55px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.wide-modal-input {
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.wide-modal-input div {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.input-date {
+  width: 100%;
+  padding-left: 23px;
+  padding-right: 0;
+}
+
+
+.calendar {
+  position: absolute;
+  bottom: 10px;
+  right: 9px;
+}
+
+.calendar path{
+  fill: #a9a9a9;
+}
+
+.short-modal-form-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+
+  margin-top: 15px;
+  position: relative;
+}
+
+.short-modal-form-container input {
+  width: 114px;
+  text-align: center;
+}
+
+.short-modal-form-container label{
+  margin-right: 23px;
+}
+
+.short-modal-form-container div {
+  position: relative;
 }
 
 .modal-input {
@@ -365,6 +449,8 @@ section {
   border: none;
   background-color: var(--basic-light-gray);
 
+  height: 38px;
+  /* margin-left: 23px; */
 }
 
 .modal-input:hover {
@@ -380,12 +466,43 @@ section {
 .modal-button {
   font-size: 21px;
   line-height: 26px;
+
+  display: block;
+  height: 58px;
+
+  margin-top: 55px;
 }
 
 .button {
   padding:3px 17px ;
   text-transform: uppercase;
   border: none;
+}
+
+.toggle-minus, .toggle-plus {
+  position: absolute;
+}
+
+.toggle-minus {
+  top: 18px;
+  left: 13px;
+}
+
+.toggle-plus {
+  top: 14px;
+  right: 13px;
+}
+
+.toggle-button {
+  cursor: pointer;
+}
+
+.toggle-button:hover path {
+  fill: var(--basic-black);
+}
+
+.toggle-button:active path {
+  fill: var(--basic-blue);
 }
 
 /*Inner page*/
@@ -759,6 +876,14 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+}
+
+.short-info div {
+  
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  gap: 6px;
 }
 
 .housing-options-item h3 {
