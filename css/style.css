@@ -225,6 +225,11 @@ section {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.features-nubmer {
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
 .features-item {
   min-height: 256px;
   text-align: center;
@@ -239,6 +244,8 @@ section {
 }
 
 .features-item p {
+  margin-top: 23px;
+  margin-bottom: 0;
   max-width: 260px;
 }
 
