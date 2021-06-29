@@ -284,8 +284,12 @@ section {
 
 .blue-text {
   width: 400px;
-  height: 256px;
+  min-height: 256px;
   background-color: var(--basic-blue);
+}
+
+.features-item p:last-child {
+  padding-bottom: 52px;
 }
 
 
@@ -307,7 +311,7 @@ section {
   color: var(--basic-black);
   background-color: var(--basic-white);
   list-style-type: none;
-  height: 330px;
+  min-height: 330px;
   padding: 0;
 
   position: relative;
@@ -389,8 +393,9 @@ section {
   padding: 0;
   min-height: 290px;
   background-color: var(--basic-white);
-  /* text-align: center; */
   line-height: 24px;
+
+  position: relative;
 }
 
 .book h2 {
@@ -428,7 +433,6 @@ section {
 .book-link {
   display: block;
   text-align: center;
-  /* width: 568px; */
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -447,7 +451,6 @@ section {
 
   position: absolute;
   left: 316px;
-  top: 2209px;
 }
 
 .modal-form {
@@ -520,7 +523,6 @@ section {
   background-color: var(--basic-light-gray);
 
   height: 38px;
-  /* margin-left: 23px; */
 }
 
 .modal-input:hover {
@@ -528,9 +530,10 @@ section {
 }
 
 .modal-input:focus {
-  border: 2px solid var(--hover-light-gray);
+  border-color: transparent;
+  border: 0;
+  outline: 2px solid var(--basic-neutral);
   background-color: var(--basic-white);
-  /* box-sizing: border-box; */
 }
 
 .modal-button {
