@@ -295,6 +295,9 @@ section {
 
 .blue-item-image {
   min-width: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
 }
 
 .features-item h3 {
