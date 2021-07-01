@@ -5,6 +5,13 @@
 * Browsers: last 2 version,not dead,not ie <= 11
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 2 version,not dead,not ie <= 11
+*/
+
 /* Variables */
 
 :root {
@@ -737,16 +744,28 @@ section {
   color: var(--basic-white);
   text-align: center;
   text-transform: uppercase;
-
-  /* width: 160px; */
   max-width: 158px;
   height: 32px;
   margin: 0 auto;
-  padding: 0;
+  padding: 5px 0;
+  box-sizing: border-box;
 }
+
 
 .price-controls input:focus {
   outline: none;
+}
+
+.price-controls input::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.price-controls input::-moz-placeholder {
+  opacity: 1;
+}
+
+.price-controls input::placeholder {
+  opacity: 1;
 }
 
 
@@ -755,6 +774,7 @@ section {
   line-height: 21px;
   font-size: 14px;
   color: var(--basic-white);
+  opacity: 1;
 }
 
 
@@ -763,6 +783,7 @@ section {
   line-height: 21px;
   font-size: 14px;
   color: var(--basic-white);
+  opacity: 1;
 }
 
 
@@ -771,6 +792,7 @@ section {
   line-height: 21px;
   font-size: 14px;
   color: var(--basic-white);
+  opacity: 1;
 }
 
 .short-border {
@@ -1020,7 +1042,7 @@ section {
   margin-left: 4px;
   width: 19px;
   height: 17px;
-  background-image: url('../img/icons/star.svg');
+  background-image: url("../img/icons/star.svg");
 }
 
 .rate-text {
@@ -1032,11 +1054,6 @@ section {
   text-align: center;
   box-sizing: border-box;
   padding: 3px 12px 3px 15px;
-
-
-  /* display: flex;
-  align-items: center;
-  justify-content: center */
 }
 
 /* Footer */
