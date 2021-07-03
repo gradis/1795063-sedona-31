@@ -275,7 +275,7 @@ img {
 }
 
 .features-item p {
-  margin-top: 25px;
+  margin-top: 24px;
   margin-bottom: 0;
 }
 
@@ -297,7 +297,7 @@ img {
   width: 400px;
   min-height: 256px;
   background-color: var(--basic-blue);
-  padding: 0 40px;
+  /* padding: 0 40px; */
   box-sizing: border-box;
 }
 
@@ -321,7 +321,7 @@ img {
 
 .features-item p {
   font-size: 14px;
-  padding: 0 40px;
+    padding: 0 40px;
   box-sizing: border-box;
 }
 
@@ -389,6 +389,10 @@ img {
   font-size: 21px;
   margin-top: 0;
   margin-bottom: 25px;
+}
+
+.interesting-item p {
+  padding: 0;
 }
 
 .house-link h3 {
@@ -705,6 +709,11 @@ img {
 
   opacity: 0.3;
 }
+
+.filter-input-checkbox:focus + label::before {
+  outline: 2px var(--basic-black) solid;
+}
+
 
 /*Price Filter */
 
