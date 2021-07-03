@@ -43,6 +43,7 @@
 }
 
 body {
+  min-width: 1200px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0;
@@ -70,11 +71,14 @@ img {
   height: auto;
 }
 
-button {
+.button {
   font-family: "PT Sans", Arial, sans-serif;
+  padding:3px 17px ;
+  text-transform: uppercase;
+  border: none;
 }
 
-section {
+.section {
   padding: 0;
   margin: 0;
 }
@@ -186,7 +190,7 @@ section {
   height: 509px;
   background-image: url("../img/bg-photo.jpg");
   background-repeat: no-repeat;
-  background-color: var(--basic-white);
+  background-color: var(--basic-dark-blue);
 
   display: flex;
 
@@ -293,6 +297,8 @@ section {
   width: 400px;
   min-height: 256px;
   background-color: var(--basic-blue);
+  padding: 0 40px;
+  box-sizing: border-box;
 }
 
 .features-item p:last-child {
@@ -315,6 +321,8 @@ section {
 
 .features-item p {
   font-size: 14px;
+  padding: 0 40px;
+  box-sizing: border-box;
 }
 
 .interesting-features {
@@ -331,7 +339,7 @@ section {
 }
 
 .interesting-item {
-  padding-top: 160px;
+  padding: 160px 50px 0;
   box-sizing: border-box;
   line-height: 21px;
   text-align: center;
@@ -417,14 +425,6 @@ section {
   margin-left: 130px;
 }
 
-.book a {
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 26px;
-  color:var(--basic-white);
-  background-color: var(--basic-brown);
-}
-
 .book-info {
   box-sizing: border-box;
   width: 568px;
@@ -441,6 +441,14 @@ section {
 }
 
 .book-link {
+  width: 568px;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color:var(--basic-white);
+  background-color: var(--basic-brown);
+  text-transform: uppercase;
+  border: none;
   display: block;
   text-align: center;
   padding-top: 30px;
@@ -471,8 +479,7 @@ section {
 }
 
 .wide-modal-input {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 
   display: grid;
   grid-template-columns: 92px 1fr;
@@ -488,15 +495,21 @@ section {
 
 .input-date {
   width: 100%;
-  padding-left: 23px;
+  padding-left: 13px;
   padding-right: 0;
+  text-transform: uppercase;
+}
+
+.input-count {
+  max-width: 114px;
+  padding: 0;
 }
 
 
 .calendar {
   position: absolute;
-  bottom: 10px;
-  right: 9px;
+  bottom: 4px;
+  right: 4px;
 }
 
 .calendar path{
@@ -508,7 +521,7 @@ section {
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
 
-  margin-top: 15px;
+  /* margin-top: 15px; */
   position: relative;
 }
 
@@ -518,7 +531,7 @@ section {
 }
 
 .short-modal-form-container label{
-  margin-right: 23px;
+  margin-right: 25px;
 }
 
 .short-modal-form-container div {
@@ -531,6 +544,8 @@ section {
   font-weight: 700;
   border: none;
   background-color: var(--basic-light-gray);
+  padding-top: 0;
+  padding-bottom: 0;
 
   height: 38px;
 }
@@ -546,17 +561,8 @@ section {
   background-color: var(--basic-white);
 }
 
-.modal-button {
-  font-size: 21px;
-  line-height: 26px;
-
-  display: block;
-  height: 58px;
-
-  margin-top: 55px;
-}
-
 .button {
+  font-family: "PT Sans", Arial, sans-serif;
   padding:3px 17px ;
   text-transform: uppercase;
   border: none;
@@ -567,16 +573,18 @@ section {
 }
 
 .toggle-minus {
-  top: 18px;
-  left: 13px;
+  top: 6px;
+  left: 6px;
 }
 
 .toggle-plus {
-  top: 14px;
-  right: 13px;
+  top: 10px;
+  right: 8px;
 }
 
 .toggle-button {
+  border: none;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -592,15 +600,16 @@ section {
 
 .filters {
   color: var(--basic-white);
-  background-color: var(--basic-white);
+  background-color: var(--basic-dark-blue);
   background-image: url("../img/bg-catalog.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   width: 1200px;
-  height: 217px;
+  min-height: 217px;
+  margin-bottom: 0;
 }
 
 .filters-form {
-  height: 217px;
   padding-left: 73px;
   padding-right: 73px;
   display: flex;
@@ -612,7 +621,6 @@ section {
 }
 
 .filter {
-  /* min-width: 135px; */
   margin: 25px 0;
   padding: 0;
 }
@@ -631,6 +639,10 @@ section {
   font-size: 14px;
   font-weight: normal;
   margin-bottom: 28px;
+}
+
+.filter-format-list li:last-child {
+  margin-bottom: 0;
 }
 
 .filter-format-legend {
@@ -856,7 +868,7 @@ section {
 .range-controls .toggle-max:hover {
   border: 10px solid var(--basic-white);
   top: -11px;
-  left: 257px;
+  left: 243px;
 }
 
 .price-filter-container > button {
@@ -1249,3 +1261,14 @@ section {
   width: 137px;
   height: 36px;
 }
+
+
+.modal-button {
+  font-size: 21px;
+  line-height: 26px;
+
+  display: block;
+  height: 58px;
+
+  margin-top: 55px;
+} 

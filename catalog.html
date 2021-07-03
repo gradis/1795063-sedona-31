@@ -6,7 +6,8 @@
     <link rel="icon" href="favico.ico">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic;display=swap">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="styleshee">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body inner-page">
     <header class="main-header">
@@ -22,7 +23,7 @@
     </header>
     <main class="inner-container">
       <!-- Filter -->
-      <section class="filters">
+      <section class="section filters">
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
         <form class="filters-form" method="get" action="https://echo.htmlacademy.ru" target="_blank">
           <fieldset class="infrastructure-filter filter">
@@ -65,16 +66,18 @@
                 <legend>Стоимость в сутки, &#8381;:</legend>
                 <div class="range-filter">
                   <div class="price-controls">
-                    <input name="minPrice" placeholder="От 0">
-                    <input name="maxPrice" placeholder="ДО 3000">
+                    <input name="minPrice" id="minCost" placeholder="От 0">
+                    <label class="visually-hidden" for="minCost">Цена от</label> 
+                    <input name="maxPrice" id="maxCost" placeholder="ДО 3000">
+                    <label class="visually-hidden" for="maxCost">Цена до</label> 
                     <div class="short-border"></div>
                   </div>
                   <div class="range-controls">
                     <div class="scale">
                       <div class="bar"></div>
                     </div>
-                    <div class="toggle toggle-min" tabindex="0"></div>
-                    <div class="toggle toggle-max" tabindex="0"></div>
+                    <div class="toggle toggle-min" tabindex="0" aria-label="минимальная цена"></div>
+                    <div class="toggle toggle-max" tabindex="0" aria-label="максимальная цена"></div>
                   </div>
                 </div>
               </fieldset>
@@ -83,7 +86,7 @@
           </div>
         </form>
       </section>
-      <section class="results">
+      <section class="section results">
         <h2 class="visually-hidden">Список вариантов жилья</h2>
         <!-- Count and sort -->
         <div class="count-and-sort">
@@ -197,13 +200,13 @@
       </section>
     </main>
     <footer class="main-footer">
-      <section class="footer-contacts align-center">
+      <section class="section footer-contacts align-center">
         <p>
           #visitsedona
         </p>
         <a class="footer-phone" href="tel:+78005558628">+7 800 555-86-28</a>
       </section>
-      <section class="footer-social align-center">
+      <section class="section footer-social align-center">
         <ul class="social-list">
           <li class="social-button">
             <a href="#">
@@ -231,7 +234,7 @@
           </li>
         </ul>
       </section>
-      <section class="footer-copyright align-center">
+      <section class="section footer-copyright align-center">
         <p>
           website by 
         </p>
