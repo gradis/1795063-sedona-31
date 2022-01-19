@@ -3,6 +3,8 @@
 * Студент: [Дмитрий](https://up.htmlacademy.ru/htmlcss/31/user/1795063).
 * Наставник: [Ирина Фролова](https://htmlacademy.ru/profile/id1043867).
 
+### [Посмотреть проект в работе](https://gradis.github.io/1795063-sedona-31/)
+
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
